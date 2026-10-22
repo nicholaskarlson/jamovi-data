@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "verification_date": "2026-08-21",
+  "dataset_id": "study_03_feedback_two_groups",
+  "dataset_sha256": "8db42b3d8a2e7e13272410584087196f4c1f539438071d4609e56230f51682f1",
+  "dictionary_sha256": "8355af33ead76d5324c165587b7c58a3aa9d90bc8e31d0f2764aeed90a00e9c0",
+  "software_provenance": {
+    "primary_recomputation": "Python standard library",
+    "numeric_reduction": "math.fsum for Python 3.10+ portability",
+    "independent_cross_check": "NumPy 2.3.5 and SciPy 1.17.0",
+    "jamovi_target": "jamovi Desktop 28.2",
+    "jamovi_official_release": "28.2",
+    "jamovi_official_citation_version": "2.7",
+    "flatpak_application_id": "org.jamovi.jamovi",
+    "flatpak_metadata_version": "2.7.27",
+    "flatpak_commit": "3cced0e1e2519185293ddd6df38277edb93f780ee6c645f9658cd87580f9ca21",
+    "flatpak_commit_subject": "Version 28.2 (3be2addd81c8)",
+    "bundled_modules": "jmv 28.2.0; scatr 28.2.0",
+    "identity_note": "28.2 is the verified application release; 2.7.27 is the observed stale Flatpak metadata field; Version 2.7 is the official requested citation family"
+  },
+  "row_count": 96,
+  "missing_counts": {
+    "participant_id": 0,
+    "feedback_condition": 0,
+    "motivation_score": 0,
+    "accuracy_score": 0
+  },
+  "group_counts": {
+    "process_feedback": 48,
+    "outcome_feedback": 48
+  },
+  "grouped_descriptives": {
+    "motivation_score": {
+      "process_feedback": {
+        "n": 48,
+        "mean": 69.341666666667,
+        "median": 68.3,
+        "sd": 7.802422791572,
+        "se": 1.126182724761,
+        "minimum": 46.7,
+        "maximum": 85.4
+      },
+      "outcome_feedback": {
+        "n": 48,
+        "mean": 63.952083333333,
+        "median": 64.05,
+        "sd": 7.837036716996,
+        "se": 1.131178814552,
+        "minimum": 49.9,
+        "maximum": 80.9
+      }
+    },
+    "accuracy_score": {
+      "process_feedback": {
+        "n": 48,
+        "mean": 75.204166666667,
+        "median": 74.2,
+        "sd": 8.861918488159,
+        "se": 1.279107756169,
+        "minimum": 58.7,
+        "maximum": 96.0
+      },
+      "outcome_feedback": {
+        "n": 48,
+        "mean": 70.227083333333,
+        "median": 70.55,
+        "sd": 7.766122271883,
+        "se": 1.120943196058,
+        "minimum": 47.4,
+        "maximum": 88.5
+      }
+    }
+  },
+  "primary_outcome": "motivation_score",
+  "independent_samples_t_test": {
+    "direction": "process_feedback - outcome_feedback",
+    "mean_difference": 5.389583333333,
+    "pooled_standard_error": 1.596199561471,
+    "student_t": 3.376509719352,
+    "student_df": 94,
+    "student_two_sided_p": "1.068943998587358e-03",
+    "student_ci_95_lower": 2.220291686135,
+    "student_ci_95_upper": 8.558874980532,
+    "welch_t": 3.376509719352,
+    "welch_df": 93.998158238848,
+    "welch_two_sided_p": "1.068951309713941e-03",
+    "welch_ci_95_lower": 2.220290876571,
+    "welch_ci_95_upper": 8.558875790096,
+    "cohens_d": 0.68922716033,
+    "hedges_g": 0.683713343047,
+    "levene_brown_forsythe": {
+      "f": 0.821105455662,
+      "df1": 1,
+      "df2": 94,
+      "p": "3.671740549552559e-01",
+      "center": "median"
+    },
+    "group_shapiro_wilk": {
+      "process_feedback": {
+        "w": 0.963748167728,
+        "p": 0.143035248247
+      },
+      "outcome_feedback": {
+        "w": 0.970024175335,
+        "p": 0.253874149417
+      },
+      "specialized_method": "NumPy 2.3.5 and SciPy 1.17.0 cross-check"
+    }
+  }
+}

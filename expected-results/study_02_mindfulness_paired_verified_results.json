@@ -1,0 +1,183 @@
+{
+  "analysis_direction": "mindfulness_post - mindfulness_pre",
+  "dataset_id": "study_02_mindfulness_paired",
+  "dataset_sha256": "144d1f27e6925ec3bc2cd56c11f90e0fb6e832b05a52bf962c302aed7ea2b2b8",
+  "descriptives": {
+    "difference_post_minus_pre": {
+      "maximum": 15.1,
+      "mean": 6.086111111111,
+      "median": 6.3,
+      "minimum": -8.7,
+      "n": 72,
+      "sd": 4.992820353875,
+      "se": 0.588409521579
+    },
+    "mindfulness_post": {
+      "maximum": 71.4,
+      "mean": 49.379166666667,
+      "median": 48.35,
+      "minimum": 30.4,
+      "n": 72,
+      "sd": 10.059988204568,
+      "se": 1.185580979685
+    },
+    "mindfulness_pre": {
+      "maximum": 64.6,
+      "mean": 43.293055555556,
+      "median": 43.85,
+      "minimum": 23.9,
+      "n": 72,
+      "sd": 8.931891372483,
+      "se": 1.052633493051
+    },
+    "practice_minutes": {
+      "maximum": 31.7,
+      "mean": 20.185294117647,
+      "median": 20.4,
+      "minimum": 5.0,
+      "n": 68,
+      "sd": 5.807850186842,
+      "se": 0.704305287592
+    }
+  },
+  "deterministic_resampling": {
+    "distributions": {
+      "n_36": {
+        "bin_counts": {
+          "46_to_below_48": 1862,
+          "48_to_below_50": 4466,
+          "50_to_below_52": 2930,
+          "52_or_higher": 566,
+          "below_46": 176
+        },
+        "empirical_standard_error": 1.645698767562,
+        "first_eight_resampled_means": [
+          51.344444444444,
+          50.780555555556,
+          50.819444444444,
+          48.261111111111,
+          47.525,
+          49.258333333333,
+          49.708333333333,
+          49.15
+        ],
+        "mean_of_resampled_means": 49.378721388889,
+        "median": 49.388888888889,
+        "model_standard_error_s_over_sqrt_n": 1.676664700761,
+        "percentile_2_5": 46.233333333333,
+        "percentile_97_5": 52.652916666667,
+        "repetitions": 10000,
+        "resampling_method": "sample with replacement from the 72 observed post-practice scores",
+        "sample_size": 36,
+        "seed": 20260821,
+        "source_variable": "mindfulness_post"
+      },
+      "n_72": {
+        "bin_counts": {
+          "46_to_below_48": 1098,
+          "48_to_below_50": 5860,
+          "50_to_below_52": 2887,
+          "52_or_higher": 136,
+          "below_46": 19
+        },
+        "empirical_standard_error": 1.156460665534,
+        "first_eight_resampled_means": [
+          47.075,
+          48.801388888889,
+          49.429166666667,
+          45.406944444444,
+          50.975,
+          50.155555555556,
+          49.683333333333,
+          49.758333333333
+        ],
+        "mean_of_resampled_means": 49.399334444444,
+        "median": 49.376388888889,
+        "model_standard_error_s_over_sqrt_n": 1.185580979685,
+        "percentile_2_5": 47.163854166667,
+        "percentile_97_5": 51.709756944444,
+        "repetitions": 10000,
+        "resampling_method": "sample with replacement from the 72 observed post-practice scores",
+        "sample_size": 72,
+        "seed": 20260822,
+        "source_variable": "mindfulness_post"
+      }
+    },
+    "purpose": "pedagogical bootstrap approximation to a sampling distribution, not a replacement for a population sampling model"
+  },
+  "diagnostics": {
+    "excess_kurtosis": 0.755359459498,
+    "iqr_difference": 5.35,
+    "lower_outlier_fence": -4.2,
+    "potential_outliers": [
+      -8.7,
+      -7.0,
+      -6.6
+    ],
+    "q1_difference": 3.825,
+    "q3_difference": 9.175,
+    "sample_skewness": -0.606167379571,
+    "shapiro_p": 0.055544537605,
+    "shapiro_w": 0.967000460805,
+    "specialized_method": "SciPy 1.17.0 cross-check",
+    "upper_outlier_fence": 17.2
+  },
+  "dictionary_sha256": "4cfb0b267516351bb2890a868ff9cc0cf70e1a410b90ea6d16713987e9fb6c16",
+  "effect_size_interval": {
+    "ci_95_lower": 0.910830079271,
+    "ci_95_upper": 1.522060011112,
+    "method": "noncentral-t inversion; SciPy 1.17.0 cross-check",
+    "metric": "Cohen's dz"
+  },
+  "missing_counts": {
+    "mindfulness_post": 0,
+    "mindfulness_pre": 0,
+    "participant_id": 0,
+    "practice_minutes": 4
+  },
+  "paired_t_test": {
+    "ci_95_lower": 4.912855847982,
+    "ci_95_upper": 7.25936637424,
+    "cohens_dz": 1.218972580575,
+    "complete_pairs": 72,
+    "critical_t_95": 1.993943367846,
+    "df": 71,
+    "mean_difference": 6.086111111111,
+    "negative_differences": 6,
+    "positive_differences": 66,
+    "pre_post_correlation": 0.868367225806,
+    "sd_difference": 4.992820353875,
+    "se_difference": 0.588409521579,
+    "t": 10.343325333661,
+    "two_sided_p": "8.176398578222843e-16",
+    "zero_differences": 0
+  },
+  "prospective_power_planning": {
+    "alpha": 0.05,
+    "complete_pairs_by_assumed_dz": {
+      "0.30": 90,
+      "0.40": 52,
+      "0.50": 34
+    },
+    "method": "exact noncentral-t calculation; SciPy 1.17.0 cross-check",
+    "minimum_dz_for_80_percent_power_at_n_72": 0.334720041197,
+    "target_power": 0.8,
+    "test": "two-sided paired t test"
+  },
+  "row_count": 72,
+  "schema_version": "1.0",
+  "software_provenance": {
+    "bundled_modules": "jmv 28.2.0; scatr 28.2.0",
+    "flatpak_application_id": "org.jamovi.jamovi",
+    "flatpak_commit": "3cced0e1e2519185293ddd6df38277edb93f780ee6c645f9658cd87580f9ca21",
+    "flatpak_commit_subject": "Version 28.2 (3be2addd81c8)",
+    "flatpak_metadata_version": "2.7.27",
+    "identity_note": "28.2 is the verified application release; 2.7.27 is the observed stale Flatpak metadata field; Version 2.7 is the official requested citation family",
+    "independent_cross_check": "SciPy 1.17.0",
+    "jamovi_official_citation_version": "2.7",
+    "jamovi_official_release": "28.2",
+    "jamovi_target": "jamovi Desktop 28.2",
+    "primary_recomputation": "Python standard library"
+  },
+  "verification_date": "2026-08-20"
+}

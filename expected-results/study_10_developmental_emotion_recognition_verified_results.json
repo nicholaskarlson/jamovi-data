@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0",
+  "verification_date": "2026-08-21",
+  "dataset_id": "study_10_developmental_emotion_recognition",
+  "dataset_sha256": "f07dc89d75397e2fd7ef4778ea071ceab79825c04aed487401e8c85177d7e5c7",
+  "dictionary_sha256": "fa3e280a284123cd810c17011cf70ddebce00b1e4c14b41f375280c5ee8d8af8",
+  "software_provenance": {
+    "primary_recomputation": "Python standard library",
+    "numeric_reduction": "math.fsum for Python 3.10+ portability",
+    "independent_cross_check": "NumPy 2.3.5 and SciPy 1.17.0",
+    "jamovi_target": "jamovi Desktop 28.2",
+    "jamovi_official_release": "28.2",
+    "jamovi_official_citation_version": "2.7",
+    "flatpak_application_id": "org.jamovi.jamovi",
+    "flatpak_metadata_version": "2.7.27",
+    "flatpak_commit": "3cced0e1e2519185293ddd6df38277edb93f780ee6c645f9658cd87580f9ca21",
+    "flatpak_commit_subject": "Version 28.2 (3be2addd81c8)",
+    "bundled_modules": "jmv 28.2.0; scatr 28.2.0",
+    "identity_note": "28.2 is the verified application release; 2.7.27 is the observed stale Flatpak metadata field; Version 2.7 is the official requested citation family"
+  },
+  "row_count": 144,
+  "missing_counts": {
+    "child_id": 0,
+    "age_group": 0,
+    "emotion_accuracy": 0,
+    "vocabulary_score": 0
+  },
+  "group_counts": {
+    "6_7": 48,
+    "8_9": 48,
+    "10_11": 48
+  },
+  "grouped_descriptives": {
+    "6_7": {
+      "n": 48,
+      "mean": 59.354166666667,
+      "median": 59.7,
+      "sd": 6.307980704423,
+      "se": 0.910478589435,
+      "minimum": 44.9,
+      "maximum": 71.4
+    },
+    "8_9": {
+      "n": 48,
+      "mean": 69.3,
+      "median": 69.65,
+      "sd": 7.795224943188,
+      "se": 1.125143804836,
+      "minimum": 50.1,
+      "maximum": 84.6
+    },
+    "10_11": {
+      "n": 48,
+      "mean": 72.360416666667,
+      "median": 71.45,
+      "sd": 7.363242220171,
+      "se": 1.062792469481,
+      "minimum": 55.8,
+      "maximum": 87.5
+    }
+  },
+  "one_way_anova": {
+    "ss_between": 4439.172638888889,
+    "ss_within": 7274.353958333333,
+    "ss_total": 11713.526597222222,
+    "df_between": 2,
+    "df_within": 141,
+    "ms_between": 2219.586319444445,
+    "ms_within": 51.591162825059,
+    "f": 43.022606933107,
+    "p": "2.594338680700755e-15",
+    "eta_squared": 0.378978320666,
+    "omega_squared": 0.368546273966,
+    "levene_brown_forsythe": {
+      "f": 0.766289349557,
+      "df1": 2,
+      "df2": 141,
+      "p": "4.666598084432847e-01",
+      "center": "median"
+    },
+    "residual_shapiro_wilk": {
+      "w": 0.987966112807,
+      "p": 0.247474500858,
+      "specialized_method": "NumPy 2.3.5 and SciPy 1.17.0 cross-check"
+    },
+    "pairwise_bonferroni": {
+      "6_7__8_9": {
+        "direction": "6_7 - 8_9",
+        "mean_difference": -9.945833333333,
+        "se": 1.466162264,
+        "t": -6.783582948179,
+        "df": 141,
+        "raw_two_sided_p": "2.982041382730154e-10",
+        "bonferroni_p": "8.946124148190463e-10",
+        "familywise_ci_lower": -13.498166686141,
+        "familywise_ci_upper": -6.393499980525
+      },
+      "6_7__10_11": {
+        "direction": "6_7 - 10_11",
+        "mean_difference": -13.00625,
+        "se": 1.466162264,
+        "t": -8.870948543251,
+        "df": 141,
+        "raw_two_sided_p": "2.924277072514923e-15",
+        "bonferroni_p": "8.772831217544770e-15",
+        "familywise_ci_lower": -16.558583352808,
+        "familywise_ci_upper": -9.453916647192
+      },
+      "8_9__10_11": {
+        "direction": "8_9 - 10_11",
+        "mean_difference": -3.060416666667,
+        "se": 1.466162264,
+        "t": -2.087365595072,
+        "df": 141,
+        "raw_two_sided_p": "3.865468185389389e-02",
+        "bonferroni_p": "1.159640455616817e-01",
+        "familywise_ci_lower": -6.612750019475,
+        "familywise_ci_upper": 0.491916686141
+      }
+    }
+  },
+  "covariate_model": {
+    "n": 144,
+    "df_model": 3,
+    "df_residual": 140,
+    "r_squared": 0.443752441087,
+    "adjusted_r_squared": 0.431832850539,
+    "f": 37.228832592453,
+    "model_p": "9.406822326068639e-18",
+    "sse": 6515.620575966499,
+    "ssr": 5197.906021255723,
+    "sst": 11713.526597222222,
+    "mse": 46.540146971189,
+    "rmse": 6.822033932134,
+    "coefficients": {
+      "intercept": {
+        "b": 45.791336217141,
+        "se": 3.50042377787,
+        "t": 13.081655000357,
+        "two_sided_p": "4.769807139618598e-26",
+        "ci_95_lower": 38.870810366727,
+        "ci_95_upper": 52.711862067555
+      },
+      "age_8_9": {
+        "b": 7.744586430651,
+        "se": 1.495456937476,
+        "t": 5.178742521149,
+        "two_sided_p": "7.620448836287293e-07",
+        "ci_95_lower": 4.787987729828,
+        "ci_95_upper": 10.701185131474,
+        "standardized_beta": 0.404789637417
+      },
+      "age_10_11": {
+        "b": 8.917339734738,
+        "se": 1.721834898969,
+        "t": 5.178974906408,
+        "two_sided_p": "7.612490882618679e-07",
+        "ci_95_lower": 5.513179643096,
+        "ci_95_upper": 12.321499826381,
+        "standardized_beta": 0.466086439899
+      },
+      "vocabulary_score": {
+        "b": 0.328646504911,
+        "se": 0.081395106743,
+        "t": 4.037669069581,
+        "two_sided_p": "8.852626792060864e-05",
+        "ci_95_lower": 0.167724006363,
+        "ci_95_upper": 0.489569003458,
+        "standardized_beta": 0.314797465756
+      }
+    },
+    "reference_age_group": "6_7",
+    "age_group_incremental_test": {
+      "f": 16.858100406273,
+      "df1": 2,
+      "df2": 140,
+      "p": "2.755116107237400e-07",
+      "partial_eta_squared": 0.194087832078
+    },
+    "age_by_vocabulary_interaction_cross_check": {
+      "f": 0.665374039269,
+      "df1": 2,
+      "df2": 138,
+      "p": "5.157225351894448e-01"
+    }
+  }
+}

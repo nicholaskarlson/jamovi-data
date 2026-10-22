@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "verification_date": "2026-08-21",
+  "dataset_id": "study_11_single_case_habit_tracking",
+  "dataset_sha256": "47536261fd7c5da0b9115127a343a06ea41b6afcc0fde2bbc6f946eca43b957d",
+  "dictionary_sha256": "4c71abbc04675ed6c3fc2f483cc501c6c41a1551001198ace60f24668b49652a",
+  "software_provenance": {
+    "primary_recomputation": "Python standard library",
+    "numeric_reduction": "math.fsum for Python 3.10+ portability",
+    "independent_cross_check": "NumPy 2.3.5 and SciPy 1.17.0",
+    "jamovi_target": "jamovi Desktop 28.2",
+    "jamovi_official_release": "28.2",
+    "jamovi_official_citation_version": "2.7",
+    "flatpak_application_id": "org.jamovi.jamovi",
+    "flatpak_metadata_version": "2.7.27",
+    "flatpak_commit": "3cced0e1e2519185293ddd6df38277edb93f780ee6c645f9658cd87580f9ca21",
+    "flatpak_commit_subject": "Version 28.2 (3be2addd81c8)",
+    "bundled_modules": "jmv 28.2.0; scatr 28.2.0",
+    "identity_note": "28.2 is the verified application release; 2.7.27 is the observed stale Flatpak metadata field; Version 2.7 is the official requested citation family"
+  },
+  "row_count": 42,
+  "missing_counts": {
+    "case_day": 0,
+    "phase": 0,
+    "habit_count": 0,
+    "stress_rating": 0
+  },
+  "phase_counts": {
+    "baseline": 14,
+    "intervention": 14,
+    "maintenance": 14
+  },
+  "phase_descriptives": {
+    "habit_count": {
+      "baseline": {
+        "n": 14,
+        "mean": 2.357142857143,
+        "median": 2.0,
+        "sd": 1.008208072019,
+        "se": 0.269454941434,
+        "minimum": 1.0,
+        "maximum": 4.0,
+        "q1": 2.0,
+        "q3": 3.0,
+        "iqr": 1.0,
+        "slope_per_day": -0.032967032967,
+        "first_observation": 3.0,
+        "last_observation": 1.0
+      },
+      "intervention": {
+        "n": 14,
+        "mean": 4.785714285714,
+        "median": 4.0,
+        "sd": 1.121713759496,
+        "se": 0.299790612433,
+        "minimum": 4.0,
+        "maximum": 7.0,
+        "q1": 4.0,
+        "q3": 5.0,
+        "iqr": 1.0,
+        "slope_per_day": 0.068131868132,
+        "first_observation": 5.0,
+        "last_observation": 6.0
+      },
+      "maintenance": {
+        "n": 14,
+        "mean": 5.5,
+        "median": 5.0,
+        "sd": 1.400549342772,
+        "se": 0.374312556709,
+        "minimum": 3.0,
+        "maximum": 9.0,
+        "q1": 5.0,
+        "q3": 6.0,
+        "iqr": 1.0,
+        "slope_per_day": -0.094505494505,
+        "first_observation": 5.0,
+        "last_observation": 5.0
+      }
+    },
+    "stress_rating": {
+      "baseline": {
+        "n": 14,
+        "mean": 6.571428571429,
+        "median": 6.5,
+        "sd": 0.646206172659,
+        "se": 0.172705864236,
+        "minimum": 6.0,
+        "maximum": 8.0,
+        "q1": 6.0,
+        "q3": 7.0,
+        "iqr": 1.0,
+        "slope_per_day": -0.061538461538,
+        "first_observation": 7.0,
+        "last_observation": 6.0
+      },
+      "intervention": {
+        "n": 14,
+        "mean": 3.785714285714,
+        "median": 4.0,
+        "sd": 1.121713759496,
+        "se": 0.299790612433,
+        "minimum": 2.0,
+        "maximum": 6.0,
+        "q1": 3.0,
+        "q3": 4.0,
+        "iqr": 1.0,
+        "slope_per_day": -0.16043956044,
+        "first_observation": 4.0,
+        "last_observation": 3.0
+      },
+      "maintenance": {
+        "n": 14,
+        "mean": 2.785714285714,
+        "median": 3.0,
+        "sd": 0.892582375304,
+        "se": 0.238552674133,
+        "minimum": 1.0,
+        "maximum": 4.0,
+        "q1": 2.0,
+        "q3": 3.0,
+        "iqr": 1.0,
+        "slope_per_day": 0.076923076923,
+        "first_observation": 2.0,
+        "last_observation": 3.0
+      }
+    }
+  },
+  "stress_rating_phase_frequencies": {
+    "baseline": {
+      "6": 7,
+      "7": 6,
+      "8": 1
+    },
+    "intervention": {
+      "2": 2,
+      "3": 3,
+      "4": 6,
+      "5": 2,
+      "6": 1
+    },
+    "maintenance": {
+      "1": 1,
+      "2": 4,
+      "3": 6,
+      "4": 3
+    }
+  },
+  "level_changes": {
+    "habit_intervention_minus_baseline": 2.428571428571,
+    "habit_maintenance_minus_baseline": 3.142857142857,
+    "stress_intervention_minus_baseline": -2.785714285714,
+    "stress_maintenance_minus_baseline": -3.785714285714
+  },
+  "phase_transitions": {
+    "day_14_to_15": {
+      "habit": [
+        1.0,
+        5.0
+      ],
+      "stress": [
+        6.0,
+        4.0
+      ]
+    },
+    "day_28_to_29": {
+      "habit": [
+        6.0,
+        5.0
+      ],
+      "stress": [
+        3.0,
+        2.0
+      ]
+    }
+  },
+  "nonoverlap_all_pairs": {
+    "method": "Nonoverlap of All Pairs (NAP); favorable pairs receive 1, ties receive 0.5, and unfavorable pairs receive 0",
+    "direction_note": "higher habit counts and lower stress ratings are treated as favorable",
+    "habit_baseline_to_intervention": 0.959183673469,
+    "habit_baseline_to_maintenance": 0.974489795918,
+    "stress_baseline_to_intervention_improvement": 0.982142857143,
+    "stress_baseline_to_maintenance_improvement": 1.0
+  }
+}

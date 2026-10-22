@@ -1,0 +1,56 @@
+name: Checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  checks:
+    name: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: release
+      - name: Files are the published copies
+        run: python scripts/verify_companion.py
+      - name: Standard-library Python route
+        run: python scripts/recompute.py
+      - name: Base-R route
+        run: Rscript scripts/recompute.R
+      - name: Both routes print the same results
+        shell: bash
+        run: |
+          python scripts/recompute.py | sed '1d;$d' > python-route.txt
+          Rscript scripts/recompute.R | sed '1d;$d' > r-route.txt
+          diff --strip-trailing-cr python-route.txt r-route.txt
+          rm python-route.txt r-route.txt
+      - name: Checks catch altered files
+        run: python tests/test_checks_catch_errors.py --with-r
+      - name: Nothing was written
+        shell: bash
+        run: test -z "$(git status --porcelain)"
+  oldest-python:
+    name: Python 3.9
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+      - run: python scripts/verify_companion.py
+      - run: python scripts/recompute.py
+      - run: python tests/test_checks_catch_errors.py
+      - run: python scripts/build_targets.py --check

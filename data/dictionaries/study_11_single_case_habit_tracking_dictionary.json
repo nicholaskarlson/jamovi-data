@@ -1,0 +1,61 @@
+{
+  "dictionary_version": "0.8",
+  "dataset_id": "study_11_single_case_habit_tracking",
+  "study_id": "STUDY_11_SINGLE_CASE_HABIT_TRACKING",
+  "title": "Daily Habit Tracking Across Baseline and Intervention",
+  "csv_path": "data/study_11_single_case_habit_tracking.csv",
+  "source": "deterministic synthetic teaching dataset",
+  "real_participant_data_allowed": false,
+  "variables": [
+    {
+      "name": "case_day",
+      "label": "Observation day",
+      "role": "time",
+      "measurement_level": "continuous",
+      "planned_type": "integer",
+      "missing_policy": "complete",
+      "observed_min": 1.0,
+      "observed_max": 42.0,
+      "observed_mean": 21.5,
+      "observed_missing_count": 0
+    },
+    {
+      "name": "phase",
+      "label": "Baseline or intervention phase",
+      "role": "grouping",
+      "measurement_level": "nominal",
+      "planned_type": "string",
+      "missing_policy": "complete",
+      "observed_values": [
+        "baseline",
+        "intervention",
+        "maintenance"
+      ],
+      "observed_missing_count": 0
+    },
+    {
+      "name": "habit_count",
+      "label": "Daily habit count",
+      "role": "outcome",
+      "measurement_level": "continuous",
+      "planned_type": "integer",
+      "missing_policy": "complete",
+      "observed_min": 1.0,
+      "observed_max": 9.0,
+      "observed_mean": 4.2143,
+      "observed_missing_count": 0
+    },
+    {
+      "name": "stress_rating",
+      "label": "Daily stress rating",
+      "role": "outcome",
+      "measurement_level": "ordinal",
+      "planned_type": "integer",
+      "missing_policy": "limited_synthetic_missingness",
+      "observed_min": 1.0,
+      "observed_max": 8.0,
+      "observed_mean": 4.381,
+      "observed_missing_count": 0
+    }
+  ]
+}

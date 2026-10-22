@@ -1,0 +1,107 @@
+{
+  "association_preview": {
+    "complete_pairs": 114,
+    "fisher_ci_95_lower": -0.633483352106,
+    "fisher_ci_95_upper": -0.358488084843,
+    "pearson_r": -0.508853530294,
+    "purpose": "graphical orientation; formal inference is deferred"
+  },
+  "categorical_frequencies": {
+    "study_habit_group": {
+      "cramming": 40,
+      "distributed": 40,
+      "mixed": 40
+    },
+    "year_level": {
+      "1": 30,
+      "2": 30,
+      "3": 30,
+      "4": 30
+    }
+  },
+  "column_count": 5,
+  "continuous_descriptives": {
+    "sleep_hours": {
+      "adjusted_sample_skewness": 0.099786163371,
+      "iqr_type7": 1.0,
+      "lower_outlier_fence": 4.6,
+      "maximum": 8.9,
+      "mean": 6.642735042735,
+      "median": 6.6,
+      "minimum": 4.1,
+      "n": 117,
+      "potential_outliers": [
+        4.1,
+        4.5,
+        8.8,
+        8.9
+      ],
+      "q1_type7": 6.1,
+      "q3_type7": 7.1,
+      "sd": 0.890303729587,
+      "se": 0.082308608917,
+      "upper_outlier_fence": 8.6
+    },
+    "stress_score": {
+      "adjusted_sample_skewness": -0.009337786243,
+      "iqr_type7": 10.3,
+      "lower_outlier_fence": -0.75,
+      "maximum": 33.8,
+      "mean": 20.017948717949,
+      "median": 20.3,
+      "minimum": 6.0,
+      "n": 117,
+      "potential_outliers": [],
+      "q1_type7": 14.7,
+      "q3_type7": 25.0,
+      "sd": 6.792181298409,
+      "se": 0.627937383171,
+      "upper_outlier_fence": 40.45
+    }
+  },
+  "dataset_id": "study_01_foundations_sleep_stress",
+  "dataset_sha256": "aa1d9323b31a11bf15e8d5ef38e8963e0b555b45b72690ebea3fbd512cc42a07",
+  "dictionary_sha256": "2709f1e39d49003e6e69be0dc0d55d82f5d880681afc8e29c84bcc8cedf35669",
+  "missing_case_ids": {
+    "sleep_hours": [
+      "S031",
+      "S062",
+      "S093"
+    ],
+    "stress_score": [
+      "S037",
+      "S074",
+      "S111"
+    ]
+  },
+  "missing_counts": {
+    "sleep_hours": 3,
+    "stress_score": 3,
+    "student_id": 0,
+    "study_habit_group": 0,
+    "year_level": 0
+  },
+  "row_count": 120,
+  "schema_version": "1.0",
+  "software_provenance": {
+    "bundled_modules": "jmv 28.2.0; scatr 28.2.0",
+    "flatpak_application_id": "org.jamovi.jamovi",
+    "flatpak_commit": "3cced0e1e2519185293ddd6df38277edb93f780ee6c645f9658cd87580f9ca21",
+    "flatpak_commit_subject": "Version 28.2 (3be2addd81c8)",
+    "flatpak_metadata_version": "2.7.27",
+    "identity_note": "28.2 is the verified application release; 2.7.27 is the observed stale Flatpak metadata field; Version 2.7 is the official requested citation family",
+    "independent_cross_check": "pandas 2.2.3 and SciPy 1.17.0",
+    "jamovi_official_citation_version": "2.7",
+    "jamovi_official_release": "28.2",
+    "jamovi_target": "jamovi Desktop 28.2",
+    "primary_recomputation": "Python standard library"
+  },
+  "variable_names": [
+    "student_id",
+    "sleep_hours",
+    "stress_score",
+    "year_level",
+    "study_habit_group"
+  ],
+  "verification_date": "2026-08-21"
+}

@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use these files, please cite the book. This repository can also be cited as below."
+type: dataset
+title: "jamovi-data: Data, verified results, and checks for Psychology Research Methods and Statistics by Design with Jamovi"
+authors:
+  - family-names: "Karlson"
+    given-names: "Nicholas Elliott"
+version: "1.0.0"
+date-released: "2026-10-21"
+repository-code: "https://github.com/nicholaskarlson/jamovi-data"
+license:
+  - CC-BY-4.0
+  - MIT
+keywords:
+  - jamovi
+  - psychology
+  - research methods
+  - statistics
+  - synthetic data
+  - reproducibility
+preferred-citation:
+  type: book
+  title: "Psychology Research Methods and Statistics by Design with Jamovi: From Scientific Questions to APA-Style Results and Reproducible Evidence"
+  authors:
+    - family-names: "Karlson"
+      given-names: "Nicholas Elliott"
+  year: 2026
+  publisher:
+    name: "NEKpress Research"
+  isbn: "979-8194435470"
+  url: "https://www.amazon.com/dp/B0HGB47S6R"

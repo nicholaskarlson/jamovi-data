@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "verification_date": "2026-08-21",
+  "dataset_id": "study_06_mood_repeated",
+  "dataset_sha256": "57319613b7698811706b922cee4f08440cb5ea6e5c1b6fcfa90da7085a525ee7",
+  "dictionary_sha256": "3cd1cf6cae8b292e356eecd6b2ecf57bdaf064c0188690b5254efb5d4fd162a5",
+  "software_provenance": {
+    "primary_recomputation": "Python standard library",
+    "numeric_reduction": "math.fsum for Python 3.10+ portability",
+    "independent_cross_check": "NumPy 2.3.5 and SciPy 1.17.0",
+    "jamovi_target": "jamovi Desktop 28.2",
+    "jamovi_official_release": "28.2",
+    "jamovi_official_citation_version": "2.7",
+    "flatpak_application_id": "org.jamovi.jamovi",
+    "flatpak_metadata_version": "2.7.27",
+    "flatpak_commit": "3cced0e1e2519185293ddd6df38277edb93f780ee6c645f9658cd87580f9ca21",
+    "flatpak_commit_subject": "Version 28.2 (3be2addd81c8)",
+    "bundled_modules": "jmv 28.2.0; scatr 28.2.0",
+    "identity_note": "28.2 is the verified application release; 2.7.27 is the observed stale Flatpak metadata field; Version 2.7 is the official requested citation family"
+  },
+  "row_count": 84,
+  "missing_counts": {
+    "participant_id": 0,
+    "support_group": 0,
+    "mood_week_1": 0,
+    "mood_week_2": 0,
+    "mood_week_3": 0
+  },
+  "group_counts": {
+    "individual_reflection": 42,
+    "peer_support": 42
+  },
+  "group_week_descriptives": {
+    "individual_reflection": {
+      "mood_week_1": {
+        "n": 42,
+        "mean": 43.5,
+        "median": 45.35,
+        "sd": 8.326771400202,
+        "se": 1.28484872142,
+        "minimum": 20.0,
+        "maximum": 58.6
+      },
+      "mood_week_2": {
+        "n": 42,
+        "mean": 45.752380952381,
+        "median": 45.0,
+        "sd": 9.151335717386,
+        "se": 1.41208175782,
+        "minimum": 18.0,
+        "maximum": 67.9
+      },
+      "mood_week_3": {
+        "n": 42,
+        "mean": 45.561904761905,
+        "median": 46.3,
+        "sd": 8.9364955313,
+        "se": 1.378931197401,
+        "minimum": 20.3,
+        "maximum": 62.9
+      }
+    },
+    "peer_support": {
+      "mood_week_1": {
+        "n": 42,
+        "mean": 44.97380952381,
+        "median": 44.9,
+        "sd": 7.134288879523,
+        "se": 1.100844673708,
+        "minimum": 29.5,
+        "maximum": 67.3
+      },
+      "mood_week_2": {
+        "n": 42,
+        "mean": 49.442857142857,
+        "median": 49.7,
+        "sd": 8.412799274774,
+        "se": 1.298123110656,
+        "minimum": 28.6,
+        "maximum": 76.3
+      },
+      "mood_week_3": {
+        "n": 42,
+        "mean": 53.614285714286,
+        "median": 53.35,
+        "sd": 7.763189293965,
+        "se": 1.197886114449,
+        "minimum": 32.8,
+        "maximum": 71.0
+      }
+    }
+  },
+  "overall_time_means": {
+    "mood_week_1": 44.236904761905,
+    "mood_week_2": 47.597619047619,
+    "mood_week_3": 49.588095238095
+  },
+  "mixed_anova": {
+    "support_group": {
+      "ss": 1222.761944444446,
+      "df1": 1,
+      "df2": 82,
+      "f": 6.323947134494,
+      "p": "1.386584510379791e-02",
+      "partial_eta_squared": 0.07159946243
+    },
+    "week": {
+      "ss": 1228.965793650793,
+      "df_uncorrected": 2,
+      "df_greenhouse_geisser": 1.602780401277,
+      "f": 87.238243043537,
+      "p_uncorrected": "1.569850288098272e-26",
+      "p_greenhouse_geisser": "8.908155299510561e-22",
+      "partial_eta_squared": 0.515475943703
+    },
+    "support_group__week": {
+      "ss": 470.521984126984,
+      "df_uncorrected": 2,
+      "df_greenhouse_geisser": 1.602780401277,
+      "f": 33.400043695814,
+      "p_uncorrected": "6.789629683091825e-13",
+      "p_greenhouse_geisser": "8.422874657028627e-11",
+      "partial_eta_squared": 0.289428345312
+    },
+    "error_between": {
+      "ss": 15855.04706349206,
+      "df": 82,
+      "ms": 193.35423248161
+    },
+    "error_within": {
+      "ss": 1155.172222222222,
+      "df": 164,
+      "ms": 7.043733062331
+    },
+    "sphericity": {
+      "mauchly_w": 0.752168420324,
+      "chi_square": 22.783601352953,
+      "df": 2,
+      "p": "1.128765760558333e-05",
+      "greenhouse_geisser_epsilon": 0.801390200639,
+      "huynh_feldt_epsilon": 0.815066280399
+    },
+    "week3_minus_week1_by_group": {
+      "individual_reflection": {
+        "week3_minus_week1_mean": 2.061904761905,
+        "sd": 3.150141489734,
+        "se": 0.486077384721,
+        "t": 4.241926957969,
+        "df": 41,
+        "two_sided_p": "1.231995533657953e-04",
+        "ci_95_lower": 1.080251568657,
+        "ci_95_upper": 3.043557955153
+      },
+      "peer_support": {
+        "week3_minus_week1_mean": 8.640476190476,
+        "sd": 3.52025910381,
+        "se": 0.543187772452,
+        "t": 15.906978449581,
+        "df": 41,
+        "two_sided_p": "3.835911451726497e-19",
+        "ci_95_lower": 7.543486229366,
+        "ci_95_upper": 9.737466151587
+      }
+    },
+    "direct_difference_in_changes": {
+      "direction": "peer_support - individual_reflection for Week 3 minus Week 1",
+      "mean_difference": 6.578571428571,
+      "pooled_standard_error": 0.728919872193,
+      "student_t": 9.025095459087,
+      "student_df": 82,
+      "student_two_sided_p": "6.415372510741158e-14",
+      "student_ci_95_lower": 5.128517600151,
+      "student_ci_95_upper": 8.028625256992,
+      "welch_t": 9.025095459087,
+      "welch_df": 81.008492172693,
+      "welch_two_sided_p": "7.080746988379742e-14",
+      "welch_ci_95_lower": 5.128251832762,
+      "welch_ci_95_upper": 8.028891024381,
+      "cohens_d": 1.96943729026,
+      "hedges_g": 1.95136905824
+    }
+  }
+}

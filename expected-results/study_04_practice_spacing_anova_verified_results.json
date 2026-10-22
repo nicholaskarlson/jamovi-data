@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "verification_date": "2026-08-21",
+  "dataset_id": "study_04_practice_spacing_anova",
+  "dataset_sha256": "0c7ec0c7b8a137649b3060b108e41dc82ac16d261cde35bbd7737e55e4f8a71b",
+  "dictionary_sha256": "fea9e44b1cfcea16007b325363b21302cb9c7fbb9d1ac41f4dbc3ca181242022",
+  "software_provenance": {
+    "primary_recomputation": "Python standard library",
+    "numeric_reduction": "math.fsum for Python 3.10+ portability",
+    "independent_cross_check": "NumPy 2.3.5 and SciPy 1.17.0",
+    "jamovi_target": "jamovi Desktop 28.2",
+    "jamovi_official_release": "28.2",
+    "jamovi_official_citation_version": "2.7",
+    "flatpak_application_id": "org.jamovi.jamovi",
+    "flatpak_metadata_version": "2.7.27",
+    "flatpak_commit": "3cced0e1e2519185293ddd6df38277edb93f780ee6c645f9658cd87580f9ca21",
+    "flatpak_commit_subject": "Version 28.2 (3be2addd81c8)",
+    "bundled_modules": "jmv 28.2.0; scatr 28.2.0",
+    "identity_note": "28.2 is the verified application release; 2.7.27 is the observed stale Flatpak metadata field; Version 2.7 is the official requested citation family"
+  },
+  "row_count": 120,
+  "missing_counts": {
+    "participant_id": 0,
+    "spacing_condition": 0,
+    "quiz_score": 0,
+    "retention_score": 0
+  },
+  "group_counts": {
+    "massed": 40,
+    "spaced": 40,
+    "interleaved": 40
+  },
+  "grouped_descriptives": {
+    "retention_score": {
+      "massed": {
+        "n": 40,
+        "mean": 63.3875,
+        "median": 63.4,
+        "sd": 8.100591542186,
+        "se": 1.2808159834,
+        "minimum": 41.6,
+        "maximum": 80.5
+      },
+      "spaced": {
+        "n": 40,
+        "mean": 72.3775,
+        "median": 71.55,
+        "sd": 7.050604174875,
+        "se": 1.114798403645,
+        "minimum": 59.2,
+        "maximum": 87.8
+      },
+      "interleaved": {
+        "n": 40,
+        "mean": 78.32,
+        "median": 80.0,
+        "sd": 8.655788044232,
+        "se": 1.368600258171,
+        "minimum": 61.2,
+        "maximum": 95.1
+      }
+    },
+    "quiz_score": {
+      "massed": {
+        "n": 40,
+        "mean": 67.44,
+        "median": 67.2,
+        "sd": 7.470413437225,
+        "se": 1.181176076238,
+        "minimum": 49.1,
+        "maximum": 82.5
+      },
+      "spaced": {
+        "n": 40,
+        "mean": 72.5925,
+        "median": 72.95,
+        "sd": 6.725206602488,
+        "se": 1.063348529953,
+        "minimum": 58.0,
+        "maximum": 85.7
+      },
+      "interleaved": {
+        "n": 40,
+        "mean": 76.945,
+        "median": 76.55,
+        "sd": 6.935747237579,
+        "se": 1.096637927299,
+        "minimum": 64.2,
+        "maximum": 96.2
+      }
+    }
+  },
+  "primary_outcome": "retention_score",
+  "one_way_anova": {
+    "ss_between": 4521.506166666662,
+    "ss_within": 7419.8775,
+    "ss_total": 11941.383666666667,
+    "df_between": 2,
+    "df_within": 117,
+    "ms_between": 2260.753083333331,
+    "ms_within": 63.417756410256,
+    "f": 35.648581900442,
+    "p": "8.137890951305159e-13",
+    "eta_squared": 0.378641729709,
+    "omega_squared": 0.366076080642,
+    "levene_brown_forsythe": {
+      "f": 0.737410398895,
+      "df1": 2,
+      "df2": 117,
+      "p": "4.805608363283631e-01",
+      "center": "median"
+    },
+    "residual_shapiro_wilk": {
+      "w": 0.994355015636,
+      "p": 0.914228340162,
+      "specialized_method": "NumPy 2.3.5 and SciPy 1.17.0 cross-check"
+    },
+    "pairwise_bonferroni": {
+      "massed__spaced": {
+        "direction": "massed - spaced",
+        "mean_difference": -8.99,
+        "se": 1.780698688861,
+        "t": -5.048580119834,
+        "df": 117,
+        "raw_two_sided_p": "1.652157801174400e-06",
+        "bonferroni_p": "4.956473403523200e-06",
+        "familywise_ci_lower": -13.315118658475,
+        "familywise_ci_upper": -4.664881341525
+      },
+      "massed__interleaved": {
+        "direction": "massed - interleaved",
+        "mean_difference": -14.9325,
+        "se": 1.780698688861,
+        "t": -8.385753352549,
+        "df": 117,
+        "raw_two_sided_p": "1.307305427757624e-13",
+        "bonferroni_p": "3.921916283272873e-13",
+        "familywise_ci_lower": -19.257618658475,
+        "familywise_ci_upper": -10.607381341525
+      },
+      "spaced__interleaved": {
+        "direction": "spaced - interleaved",
+        "mean_difference": -5.9425,
+        "se": 1.780698688861,
+        "t": -3.337173232716,
+        "df": 117,
+        "raw_two_sided_p": "1.135117682149592e-03",
+        "bonferroni_p": "3.405353046448777e-03",
+        "familywise_ci_lower": -10.267618658475,
+        "familywise_ci_upper": -1.617381341525
+      }
+    }
+  }
+}

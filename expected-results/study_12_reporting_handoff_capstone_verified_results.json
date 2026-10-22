@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0",
+  "verification_date": "2026-08-21",
+  "dataset_id": "study_12_reporting_handoff_capstone",
+  "dataset_sha256": "7308bf4607ed449abc7915a97f2514dbb7d6eb284266413ce1f14b4475773e00",
+  "dictionary_sha256": "0f1e005ca47b5f215232796d57ccc2be96deb4d86456525d8930be7cfce30a4f",
+  "software_provenance": {
+    "primary_recomputation": "Python standard library",
+    "numeric_reduction": "math.fsum for Python 3.10+ portability",
+    "independent_cross_check": "NumPy 2.3.5 and SciPy 1.17.0",
+    "jamovi_target": "jamovi Desktop 28.2",
+    "jamovi_official_release": "28.2",
+    "jamovi_official_citation_version": "2.7",
+    "flatpak_application_id": "org.jamovi.jamovi",
+    "flatpak_metadata_version": "2.7.27",
+    "flatpak_commit": "3cced0e1e2519185293ddd6df38277edb93f780ee6c645f9658cd87580f9ca21",
+    "flatpak_commit_subject": "Version 28.2 (3be2addd81c8)",
+    "bundled_modules": "jmv 28.2.0; scatr 28.2.0",
+    "identity_note": "28.2 is the verified application release; 2.7.27 is the observed stale Flatpak metadata field; Version 2.7 is the official requested citation family"
+  },
+  "row_count": 60,
+  "missing_counts": {
+    "project_id": 0,
+    "project_stage": 0,
+    "evidence_quality_rating": 0,
+    "report_decision": 0
+  },
+  "project_stage_counts": {
+    "proposal": 20,
+    "analysis": 20,
+    "report": 20
+  },
+  "report_decision_counts": {
+    "ready_for_report": 26,
+    "revise_with_evidence_check": 29,
+    "return_to_design_map": 5
+  },
+  "quality_rating_distribution": {
+    "1": 1,
+    "2": 4,
+    "3": 10,
+    "4": 19,
+    "5": 26
+  },
+  "quality_rating_overall": {
+    "n": 60,
+    "mean": 4.083333333333,
+    "median": 4.0,
+    "sd": 1.013329244714,
+    "se": 0.130820242967,
+    "minimum": 1.0,
+    "maximum": 5.0,
+    "q1": 3.75,
+    "q3": 5.0,
+    "iqr": 1.25
+  },
+  "quality_rating_by_stage": {
+    "proposal": {
+      "n": 20,
+      "mean": 3.3,
+      "median": 3.0,
+      "sd": 1.080935267549,
+      "se": 0.241704473752,
+      "minimum": 1.0,
+      "maximum": 5.0
+    },
+    "analysis": {
+      "n": 20,
+      "mean": 4.05,
+      "median": 4.0,
+      "sd": 0.759154654516,
+      "se": 0.169752141293,
+      "minimum": 2.0,
+      "maximum": 5.0
+    },
+    "report": {
+      "n": 20,
+      "mean": 4.9,
+      "median": 5.0,
+      "sd": 0.307793505626,
+      "se": 0.068824720161,
+      "minimum": 4.0,
+      "maximum": 5.0
+    }
+  },
+  "stage_by_decision": {
+    "proposal": {
+      "ready_for_report": {
+        "count": 3,
+        "row_percent": 15.0
+      },
+      "revise_with_evidence_check": {
+        "count": 13,
+        "row_percent": 65.0
+      },
+      "return_to_design_map": {
+        "count": 4,
+        "row_percent": 20.0
+      }
+    },
+    "analysis": {
+      "ready_for_report": {
+        "count": 5,
+        "row_percent": 25.0
+      },
+      "revise_with_evidence_check": {
+        "count": 14,
+        "row_percent": 70.0
+      },
+      "return_to_design_map": {
+        "count": 1,
+        "row_percent": 5.0
+      }
+    },
+    "report": {
+      "ready_for_report": {
+        "count": 18,
+        "row_percent": 90.0
+      },
+      "revise_with_evidence_check": {
+        "count": 2,
+        "row_percent": 10.0
+      },
+      "return_to_design_map": {
+        "count": 0,
+        "row_percent": 0.0
+      }
+    }
+  }
+}

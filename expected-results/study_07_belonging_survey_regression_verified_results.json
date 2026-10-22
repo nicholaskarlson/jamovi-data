@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0",
+  "verification_date": "2026-08-20",
+  "dataset_id": "study_07_belonging_survey_regression",
+  "dataset_sha256": "b27ccd79a7d7892b338cb2e0c666a722e490c4ca5d67f45da1de3d8307404db3",
+  "dictionary_sha256": "d50af5ea89405dfd6c8e3a5e8d263ef9190defa653319d23aa7eaec37cc451e9",
+  "software_provenance": {
+    "primary_recomputation": "Python standard library",
+    "numeric_reduction": "math.fsum for Python 3.10+ portability",
+    "independent_cross_check": "NumPy 2.3.5 and SciPy 1.17.0",
+    "jamovi_target": "jamovi Desktop 28.2",
+    "jamovi_official_release": "28.2",
+    "jamovi_official_citation_version": "2.7",
+    "flatpak_application_id": "org.jamovi.jamovi",
+    "flatpak_metadata_version": "2.7.27",
+    "flatpak_commit": "3cced0e1e2519185293ddd6df38277edb93f780ee6c645f9658cd87580f9ca21",
+    "flatpak_commit_subject": "Version 28.2 (3be2addd81c8)",
+    "bundled_modules": "jmv 28.2.0; scatr 28.2.0",
+    "identity_note": "28.2 is the verified application release; 2.7.27 is the observed stale Flatpak metadata field; Version 2.7 is the official requested citation family"
+  },
+  "row_count": 180,
+  "missing_counts": {
+    "student_id": 0,
+    "belonging_score": 0,
+    "loneliness_score": 0,
+    "study_hours": 0,
+    "exam_score": 0
+  },
+  "descriptives": {
+    "belonging_score": {
+      "n": 180,
+      "mean": 52.310555555556,
+      "median": 52.25,
+      "sd": 10.289021633279,
+      "se": 0.766898393133,
+      "minimum": 29.2,
+      "maximum": 80.0
+    },
+    "loneliness_score": {
+      "n": 180,
+      "mean": 27.107777777778,
+      "median": 27.05,
+      "sd": 9.658240789392,
+      "se": 0.719882764938,
+      "minimum": 15.0,
+      "maximum": 59.3
+    },
+    "study_hours": {
+      "n": 180,
+      "mean": 10.611666666667,
+      "median": 10.45,
+      "sd": 3.052744437936,
+      "se": 0.227538136039,
+      "minimum": 3.6,
+      "maximum": 18.2
+    },
+    "exam_score": {
+      "n": 180,
+      "mean": 76.198888888889,
+      "median": 76.3,
+      "sd": 9.96928236822,
+      "se": 0.743066435408,
+      "minimum": 51.8,
+      "maximum": 99.0
+    }
+  },
+  "correlations": {
+    "belonging_score__loneliness_score": {
+      "r": -0.780619412606,
+      "two_sided_p": "3.544990042731141e-38",
+      "ci_95_lower": -0.831899755877,
+      "ci_95_upper": -0.716119776155,
+      "n": 180
+    },
+    "belonging_score__study_hours": {
+      "r": 0.138911381286,
+      "two_sided_p": "6.292307727710517e-02",
+      "ci_95_lower": -0.007504407528,
+      "ci_95_upper": 0.279495999328,
+      "n": 180
+    },
+    "belonging_score__exam_score": {
+      "r": 0.630340065573,
+      "two_sided_p": "2.512641988793452e-21",
+      "ci_95_lower": 0.53323905895,
+      "ci_95_upper": 0.711047876458,
+      "n": 180
+    },
+    "loneliness_score__study_hours": {
+      "r": -0.13045860764,
+      "two_sided_p": "8.088745515122149e-02",
+      "ci_95_lower": -0.271540575075,
+      "ci_95_upper": 0.01611215024,
+      "n": 180
+    },
+    "loneliness_score__exam_score": {
+      "r": -0.53450772382,
+      "two_sided_p": "1.090903938286327e-14",
+      "ci_95_lower": -0.631408255225,
+      "ci_95_upper": -0.421171087672,
+      "n": 180
+    },
+    "study_hours__exam_score": {
+      "r": 0.449464007029,
+      "two_sided_p": "2.464641288652453e-10",
+      "ci_95_lower": 0.324535698186,
+      "ci_95_upper": 0.558979929477,
+      "n": 180
+    }
+  },
+  "simple_regression_exam_from_belonging": {
+    "n": 180,
+    "df_model": 1,
+    "df_residual": 178,
+    "r_squared": 0.397328598266,
+    "adjusted_r_squared": 0.393942803874,
+    "f": 117.351661764359,
+    "model_p": "2.512641988793415e-21",
+    "sse": 10721.644637201698,
+    "ssr": 7068.555140576082,
+    "sst": 17790.19977777778,
+    "mse": 60.233958635965,
+    "rmse": 7.761053964248,
+    "coefficients": {
+      "intercept": {
+        "b": 44.250124861732,
+        "se": 3.005432183947,
+        "t": 14.723381581555,
+        "two_sided_p": "1.307077645164590e-32",
+        "ci_95_lower": 38.319262428102,
+        "ci_95_upper": 50.180987295361
+      },
+      "belonging_score": {
+        "b": 0.610751762964,
+        "se": 0.056379355554,
+        "t": 10.832897200858,
+        "two_sided_p": "2.512641988793670e-21",
+        "ci_95_lower": 0.499493820205,
+        "ci_95_upper": 0.722009705722,
+        "standardized_beta": 0.630340065573
+      }
+    },
+    "diagnostics": {
+      "breusch_pagan_lm": 0.207065598489,
+      "breusch_pagan_p": 0.649077144534,
+      "maximum_leverage": 0.04601568732,
+      "maximum_leverage_case": "S013",
+      "maximum_cooks_distance": 0.089073270243,
+      "maximum_cooks_case": "S011",
+      "maximum_absolute_studentized_residual": 2.645178624534,
+      "maximum_absolute_studentized_case": "S011",
+      "shapiro_w": 0.990256999255,
+      "shapiro_p": 0.258965785122,
+      "specialized_method": "NumPy 2.3.5 and SciPy 1.17.0 cross-check"
+    }
+  },
+  "multiple_regression_exam_from_belonging_loneliness_study_hours": {
+    "n": 180,
+    "df_model": 3,
+    "df_residual": 176,
+    "r_squared": 0.533899184753,
+    "adjusted_r_squared": 0.525954284493,
+    "f": 67.200237547147,
+    "model_p": "5.231332429252563e-29",
+    "sse": 8292.026619828091,
+    "ssr": 9498.173157949688,
+    "sst": 17790.19977777778,
+    "mse": 47.11378761266,
+    "rmse": 6.863948398164,
+    "coefficients": {
+      "intercept": {
+        "b": 40.057550701267,
+        "se": 6.377012288304,
+        "t": 6.281554572937,
+        "two_sided_p": "2.547521406518826e-09",
+        "ci_95_lower": 27.472297659476,
+        "ci_95_upper": 52.642803743059
+      },
+      "belonging_score": {
+        "b": 0.494802337982,
+        "se": 0.079922193323,
+        "t": 6.191050538115,
+        "two_sided_p": "4.090253448402851e-09",
+        "ci_95_lower": 0.337073141117,
+        "ci_95_upper": 0.652531534846,
+        "standardized_beta": 0.510671858981
+      },
+      "loneliness_score": {
+        "b": -0.090816285636,
+        "se": 0.085043254921,
+        "t": -1.067883463776,
+        "two_sided_p": "2.870356279882260e-01",
+        "ci_95_lower": -0.258652073666,
+        "ci_95_upper": 0.077019502394,
+        "standardized_beta": -0.087982817807
+      },
+      "study_hours": {
+        "b": 1.19866003021,
+        "se": 0.169809980555,
+        "t": 7.058831443784,
+        "two_sided_p": "3.726590764383228e-11",
+        "ci_95_lower": 0.863534194209,
+        "ci_95_upper": 1.533785866211,
+        "standardized_beta": 0.367047757807
+      }
+    },
+    "diagnostics": {
+      "breusch_pagan_lm": 3.956471143168,
+      "breusch_pagan_p": 0.266202984927,
+      "maximum_leverage": 0.07951927449,
+      "maximum_leverage_case": "S014",
+      "maximum_cooks_distance": 0.089285907092,
+      "maximum_cooks_case": "S044",
+      "maximum_absolute_studentized_residual": 2.611217614267,
+      "maximum_absolute_studentized_case": "S155",
+      "shapiro_w": 0.987904356166,
+      "shapiro_p": 0.126822292455,
+      "vif": {
+        "belonging_score": 2.569141115816,
+        "loneliness_score": 2.563190094829,
+        "study_hours": 1.020968476361
+      },
+      "specialized_method": "NumPy 2.3.5 and SciPy 1.17.0 cross-check"
+    }
+  }
+}

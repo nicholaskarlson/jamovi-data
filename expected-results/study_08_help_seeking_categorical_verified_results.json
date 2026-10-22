@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "verification_date": "2026-08-21",
+  "dataset_id": "study_08_help_seeking_categorical",
+  "dataset_sha256": "1975ba7fe5179b416b4954a6bf1571080f3ba05fe81179d853642f3c260c2fac",
+  "dictionary_sha256": "2f9d93e3188409482a7ddb608fc21443ab0e27d710c3f759e23e983547dadaff",
+  "software_provenance": {
+    "primary_recomputation": "Python standard library",
+    "numeric_reduction": "math.fsum for Python 3.10+ portability",
+    "independent_cross_check": "NumPy 2.3.5 and SciPy 1.17.0",
+    "jamovi_target": "jamovi Desktop 28.2",
+    "jamovi_official_release": "28.2",
+    "jamovi_official_citation_version": "2.7",
+    "flatpak_application_id": "org.jamovi.jamovi",
+    "flatpak_metadata_version": "2.7.27",
+    "flatpak_commit": "3cced0e1e2519185293ddd6df38277edb93f780ee6c645f9658cd87580f9ca21",
+    "flatpak_commit_subject": "Version 28.2 (3be2addd81c8)",
+    "bundled_modules": "jmv 28.2.0; scatr 28.2.0",
+    "identity_note": "28.2 is the verified application release; 2.7.27 is the observed stale Flatpak metadata field; Version 2.7 is the official requested citation family"
+  },
+  "row_count": 150,
+  "missing_counts": {
+    "participant_id": 0,
+    "message_condition": 0,
+    "resource_choice": 0,
+    "prior_support_use": 0
+  },
+  "message_counts": {
+    "autonomy_message": 50,
+    "belonging_message": 50,
+    "skills_message": 50
+  },
+  "resource_counts": {
+    "advisor_meeting": 57,
+    "peer_group": 42,
+    "self_guided_module": 51
+  },
+  "contingency_table": {
+    "autonomy_message": {
+      "advisor_meeting": {
+        "observed": 14,
+        "expected": 19.0,
+        "row_percent": 28.0,
+        "column_percent": 24.561403508772
+      },
+      "peer_group": {
+        "observed": 13,
+        "expected": 14.0,
+        "row_percent": 26.0,
+        "column_percent": 30.952380952381
+      },
+      "self_guided_module": {
+        "observed": 23,
+        "expected": 17.0,
+        "row_percent": 46.0,
+        "column_percent": 45.098039215686
+      }
+    },
+    "belonging_message": {
+      "advisor_meeting": {
+        "observed": 20,
+        "expected": 19.0,
+        "row_percent": 40.0,
+        "column_percent": 35.087719298246
+      },
+      "peer_group": {
+        "observed": 22,
+        "expected": 14.0,
+        "row_percent": 44.0,
+        "column_percent": 52.380952380952
+      },
+      "self_guided_module": {
+        "observed": 8,
+        "expected": 17.0,
+        "row_percent": 16.0,
+        "column_percent": 15.686274509804
+      }
+    },
+    "skills_message": {
+      "advisor_meeting": {
+        "observed": 23,
+        "expected": 19.0,
+        "row_percent": 46.0,
+        "column_percent": 40.350877192982
+      },
+      "peer_group": {
+        "observed": 7,
+        "expected": 14.0,
+        "row_percent": 14.0,
+        "column_percent": 16.666666666667
+      },
+      "self_guided_module": {
+        "observed": 20,
+        "expected": 17.0,
+        "row_percent": 40.0,
+        "column_percent": 39.21568627451
+      }
+    }
+  },
+  "pearson_chi_square": {
+    "chi_square": 17.765148164529,
+    "df": 4,
+    "p": "1.371567448998573e-03",
+    "cramers_v": 0.243345763367,
+    "minimum_expected_count": 14.0,
+    "cells_below_five": 0
+  }
+}

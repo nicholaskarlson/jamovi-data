@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "verification_date": "2026-08-21",
+  "dataset_id": "study_05_sleep_strategy_factorial",
+  "dataset_sha256": "6f6a9d79bb1ded5bde1d43ce927c2eb8777ecf5a55a9d5b4b855dc666212e9c8",
+  "dictionary_sha256": "22268e28a925dfe9da657072551cdfb452f0717e32a8c6b29e92eb4a3002d6d5",
+  "software_provenance": {
+    "primary_recomputation": "Python standard library",
+    "numeric_reduction": "math.fsum for Python 3.10+ portability",
+    "independent_cross_check": "NumPy 2.3.5 and SciPy 1.17.0",
+    "jamovi_target": "jamovi Desktop 28.2",
+    "jamovi_official_release": "28.2",
+    "jamovi_official_citation_version": "2.7",
+    "flatpak_application_id": "org.jamovi.jamovi",
+    "flatpak_metadata_version": "2.7.27",
+    "flatpak_commit": "3cced0e1e2519185293ddd6df38277edb93f780ee6c645f9658cd87580f9ca21",
+    "flatpak_commit_subject": "Version 28.2 (3be2addd81c8)",
+    "bundled_modules": "jmv 28.2.0; scatr 28.2.0",
+    "identity_note": "28.2 is the verified application release; 2.7.27 is the observed stale Flatpak metadata field; Version 2.7 is the official requested citation family"
+  },
+  "row_count": 160,
+  "missing_counts": {
+    "participant_id": 0,
+    "sleep_reminder": 0,
+    "study_strategy": 0,
+    "recall_score": 0
+  },
+  "cell_counts": {
+    "none__rereading": 40,
+    "none__practice_testing": 40,
+    "reminder__rereading": 40,
+    "reminder__practice_testing": 40
+  },
+  "cell_descriptives": {
+    "none__rereading": {
+      "n": 40,
+      "mean": 63.24,
+      "median": 63.2,
+      "sd": 7.960666123397,
+      "se": 1.258691832104,
+      "minimum": 39.9,
+      "maximum": 81.0,
+      "model_se": 1.209222423788,
+      "model_ci_95_lower": 60.851438052256,
+      "model_ci_95_upper": 65.628561947744
+    },
+    "none__practice_testing": {
+      "n": 40,
+      "mean": 72.1825,
+      "median": 73.4,
+      "sd": 7.75152218302,
+      "se": 1.225623271583,
+      "minimum": 53.1,
+      "maximum": 88.4,
+      "model_se": 1.209222423788,
+      "model_ci_95_lower": 69.793938052256,
+      "model_ci_95_upper": 74.571061947744
+    },
+    "reminder__rereading": {
+      "n": 40,
+      "mean": 68.36,
+      "median": 68.95,
+      "sd": 7.320634692955,
+      "se": 1.157493977389,
+      "minimum": 49.1,
+      "maximum": 80.5,
+      "model_se": 1.209222423788,
+      "model_ci_95_lower": 65.971438052256,
+      "model_ci_95_upper": 70.748561947744
+    },
+    "reminder__practice_testing": {
+      "n": 40,
+      "mean": 75.04,
+      "median": 76.15,
+      "sd": 7.543541982453,
+      "se": 1.192738714483,
+      "minimum": 59.2,
+      "maximum": 87.3,
+      "model_se": 1.209222423788,
+      "model_ci_95_lower": 72.651438052256,
+      "model_ci_95_upper": 77.428561947744
+    }
+  },
+  "marginal_means": {
+    "sleep_reminder": {
+      "none": 67.71125,
+      "reminder": 71.7
+    },
+    "study_strategy": {
+      "rereading": 65.8,
+      "practice_testing": 73.61125
+    }
+  },
+  "factorial_anova": {
+    "grand_mean": 69.705625,
+    "effects": {
+      "sleep_reminder": {
+        "ss": 636.405062500003,
+        "df": 1,
+        "ms": 636.405062500003,
+        "f": 10.880810586453,
+        "p": "1.203703587351652e-03",
+        "partial_eta_squared": 0.065201089018
+      },
+      "study_strategy": {
+        "ss": 2440.625062500001,
+        "df": 1,
+        "ms": 2440.625062500001,
+        "f": 41.728107745235,
+        "p": "1.268084835596265e-09",
+        "partial_eta_squared": 0.211037814609
+      },
+      "sleep_reminder__study_strategy": {
+        "ss": 51.189062499999,
+        "df": 1,
+        "ms": 51.189062499999,
+        "f": 0.875194944196,
+        "p": "3.509670479611224e-01",
+        "partial_eta_squared": 0.005578924982
+      }
+    },
+    "error": {
+      "ss": 9124.245749999998,
+      "df": 156,
+      "ms": 58.488754807692
+    },
+    "total_ss": 12252.464937499999,
+    "levene_brown_forsythe": {
+      "f": 0.034891476861,
+      "df1": 3,
+      "df2": 156,
+      "p": "9.912339407500875e-01",
+      "center": "median"
+    },
+    "residual_shapiro_wilk": {
+      "w": 0.986757729867,
+      "p": 0.133625049975,
+      "specialized_method": "NumPy 2.3.5 and SciPy 1.17.0 cross-check"
+    },
+    "simple_effects": {
+      "reminder_minus_none__rereading": {
+        "mean_difference": 5.12,
+        "se": 1.710098751647,
+        "t": 2.993979145981,
+        "df": 156,
+        "raw_two_sided_p": "3.202992097106461e-03",
+        "bonferroni_p": "6.405984194212923e-03"
+      },
+      "reminder_minus_none__practice_testing": {
+        "mean_difference": 2.8575,
+        "se": 1.710098751647,
+        "t": 1.670956134696,
+        "df": 156,
+        "raw_two_sided_p": "9.673529976331929e-02",
+        "bonferroni_p": "1.934705995266386e-01"
+      }
+    }
+  }
+}

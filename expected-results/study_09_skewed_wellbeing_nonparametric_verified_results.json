@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "verification_date": "2026-09-03",
+  "dataset_id": "study_09_skewed_wellbeing_nonparametric",
+  "dataset_sha256": "e4aaec0f938125028484f3d3dfe80d61bc9eb354ee0bcf52fde9a1cf0553943e",
+  "dictionary_sha256": "d56fa6c989711fc73e9de5bb29d05b689f97e8f0feb4dd59482c54c468214ec1",
+  "software_provenance": {
+    "primary_recomputation": "Python standard library",
+    "numeric_reduction": "math.fsum for Python 3.10+ portability",
+    "independent_cross_check": "NumPy 2.3.5 and SciPy 1.17.0",
+    "jamovi_target": "jamovi Desktop 28.2",
+    "jamovi_official_release": "28.2",
+    "jamovi_official_citation_version": "2.7",
+    "flatpak_application_id": "org.jamovi.jamovi",
+    "flatpak_metadata_version": "2.7.27",
+    "flatpak_commit": "3cced0e1e2519185293ddd6df38277edb93f780ee6c645f9658cd87580f9ca21",
+    "flatpak_commit_subject": "Version 28.2 (3be2addd81c8)",
+    "bundled_modules": "jmv 28.2.0; scatr 28.2.0",
+    "identity_note": "28.2 is the verified application release; 2.7.27 is the observed stale Flatpak metadata field; Version 2.7 is the official requested citation family"
+  },
+  "row_count": 132,
+  "missing_counts": {
+    "participant_id": 0,
+    "app_use_group": 0,
+    "wellbeing_score": 0,
+    "outlier_flag": 0
+  },
+  "group_counts": {
+    "low": 44,
+    "moderate": 44,
+    "high": 44
+  },
+  "flagged_outliers": {
+    "low": 2,
+    "moderate": 1,
+    "high": 0
+  },
+  "grouped_descriptives": {
+    "low": {
+      "n": 44,
+      "mean": 56.420454545455,
+      "median": 55.65,
+      "sd": 9.460925259473,
+      "se": 1.426288147967,
+      "minimum": 26.9,
+      "maximum": 78.0,
+      "q1": 51.8,
+      "q3": 61.675,
+      "iqr": 9.875
+    },
+    "moderate": {
+      "n": 44,
+      "mean": 61.834090909091,
+      "median": 62.1,
+      "sd": 7.167171385279,
+      "se": 1.080491740597,
+      "minimum": 47.9,
+      "maximum": 82.3,
+      "q1": 57.175,
+      "q3": 66.5,
+      "iqr": 9.325
+    },
+    "high": {
+      "n": 44,
+      "mean": 49.702272727273,
+      "median": 49.0,
+      "sd": 7.4788535571,
+      "se": 1.127479595951,
+      "minimum": 31.3,
+      "maximum": 65.4,
+      "q1": 44.775,
+      "q3": 55.325,
+      "iqr": 10.55
+    }
+  },
+  "kruskal_wallis": {
+    "h": 39.573252313412,
+    "df": 2,
+    "p": "2.551393499343035e-09",
+    "epsilon_squared": 0.302085895522,
+    "epsilon_squared_method": "H / (N - 1), matching jamovi jmv 28.2.0",
+    "bias_adjusted_rank_effect_size": 0.291265521809,
+    "bias_adjusted_rank_effect_size_method": "(H - k + 1) / (N - k)",
+    "rank_tie_method": "average ranks for tied observations",
+    "tie_correction": 0.999903471378,
+    "tie_correction_method": "H divided by 1 - sum(t^3 - t) / (N^3 - N)",
+    "mean_ranks": {
+      "low": 68.840909090909,
+      "moderate": 90.897727272727,
+      "high": 39.761363636364
+    }
+  },
+  "pairwise_mann_whitney_holm": {
+    "low__moderate": {
+      "u": 620.5,
+      "z_continuity_corrected": -2.896093481379,
+      "two_sided_p": "3.778398275295501e-03",
+      "p_value_method": "two-sided normal approximation with tie-adjusted variance and a 0.5 continuity correction",
+      "rank_biserial_first_minus_second": -0.358987603306,
+      "rank_biserial_convention": "2 * U_first / (n_first * n_second) - 1; positive values favor the first-named group",
+      "direction": "low - moderate",
+      "holm_p": "3.778398275295501e-03"
+    },
+    "low__high": {
+      "u": 1418.5,
+      "z_continuity_corrected": 3.755740825995,
+      "two_sided_p": "1.728294772999562e-04",
+      "p_value_method": "two-sided normal approximation with tie-adjusted variance and a 0.5 continuity correction",
+      "rank_biserial_first_minus_second": 0.465392561983,
+      "rank_biserial_convention": "2 * U_first / (n_first * n_second) - 1; positive values favor the first-named group",
+      "direction": "low - high",
+      "holm_p": "3.456589545999124e-04"
+    },
+    "moderate__high": {
+      "u": 1694.0,
+      "z_continuity_corrected": 6.054662236889,
+      "two_sided_p": "1.407125964722137e-09",
+      "p_value_method": "two-sided normal approximation with tie-adjusted variance and a 0.5 continuity correction",
+      "rank_biserial_first_minus_second": 0.75,
+      "rank_biserial_convention": "2 * U_first / (n_first * n_second) - 1; positive values favor the first-named group",
+      "direction": "moderate - high",
+      "holm_p": "4.221377894166411e-09"
+    }
+  }
+}
