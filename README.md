@@ -29,6 +29,14 @@ All twelve datasets are synthetic teaching data. They describe no real people.
 
 No account, sign-in, or prepared jamovi file is needed.
 
+## Free quick-start guide
+
+*Psychology Research Methods and Statistics by Design with Jamovi: A Free
+Quick-Start Guide* (CC BY 4.0) introduces the book and runs Study 03 in jamovi
+from the research question to an APA-style result, checked against its record
+here: https://doi.org/10.5281/zenodo.23851753 (all versions; version 1.0 is
+https://doi.org/10.5281/zenodo.23851754).
+
 ## The twelve studies
 
 | CSV file in `data/` | Rows | Chapters | Analyses |
